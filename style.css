@@ -1,0 +1,173 @@
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+html, body, button, input, select, optgroup, textarea {
+    color: var(--miles_primary_light);
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+
+    background-color:#ffffff; 
+}
+:root {
+  --miles_primary_dark: #b72318; /* Miles-rød */
+  --miles_primary_light: #fbf0e5; /* Krem */
+  --miles_secondary_one: #004047; /* Sjøgrønn */
+  --miles_secondary_two: #78e8db; /* Turkis */
+  --miles_secondary_three: #000000; /* Sort */
+  --miles_secondary_four: #450d21; /* Burgunder */
+  --miles_secondary_five: #ff303b; /* korall */
+
+  --miles_default_bg: #F5F5F5;
+
+  --miles_effect_shadow_low: 0 0 4px 0 #00000033;
+  --miles_effect_shadow_high: 0 0 16px 0 #00000033;
+
+  --content_width: 80vw;
+  --content_width_max: 1440px;
+
+  --default_padding: 1rem 0.625rem;
+  --default_padding_large: 2rem 1.25rem;
+
+  --vertical_spacing: 4rem;
+  --vertical_spacing_large: 8rem;
+
+  --header-height: 72px;
+
+  --miles-h1: 2.5rem;
+  --miles-h2: 3rem;
+  --miles-h3: 1.25rem;
+ 
+
+  --halve_margin_offset: calc(calc(100vw - var(--content_width)) / 2);
+  --halve_margin_offset_large: calc(100vw - var(--content_width));
+
+  font-family: 'Roboto', sans-serif;
+}
+
+.components {
+  width: 100vw;
+}
+
+.components miles-image-slider {
+  margin: auto;
+}
+
+
+
+miles-fagblogg-teaser .wp-block-latest-posts__list {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  miles-fagblogg-teaser .wp-block-latest-posts__list {
+    position: relative;
+    grid-template-columns: repeat(3, 250px);
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+miles-fagblogg-teaser .wp-block-latest-posts__list li .wp-block-latest-posts__post-title,
+miles-fagblogg-teaser .wp-block-latest-posts__list li .wp-block-latest-posts__post-author,
+miles-fagblogg-teaser .wp-block-latest-posts__list li .wp-block-latest-posts__post-date {
+  padding: 0 1rem;
+  color: var(--miles_secondary_three);
+}
+
+miles-fagblogg-teaser .wp-block-latest-posts__list li .wp-block-latest-posts__post-title {
+  padding-top: 1.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+          line-clamp: 2; 
+  -webkit-box-orient: vertical;
+  height: 4rem;
+}
+
+miles-fagblogg-teaser .wp-block-latest-posts__list li {
+  padding-bottom: 2rem;
+  background-color: rgb(255,48,59, 0.1);
+ }
+
+
+
+ miles-fagblogg-teaser .wp-block-latest-posts__list li img {
+  padding:0;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem 0.5rem 0 0;
+ }
+
+ miles-fagblogg-teaser .wp-block-latest-posts__list li a {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--miles_secondary_three);
+  }
+
+  /*
+  miles-overlap-block {
+    display: block;
+    --width: 50%;
+  }
+
+
+  miles-overlap-block  > .miles-overlap-block .wp-block-group {
+    background-color: var(--miles_default_bg);
+    color: var(--miles_secondary_three);
+    padding: 3rem;
+    width: var(--width);
+    position: relative;
+  }
+    */
+
+  /* LIST */
+  /*
+  miles-overlap-block  .wp-block-group__inner-container ul {
+    display: flex;
+    flex-direction: column;
+    color: var(--miles_primary_light);
+    background-color: var(--miles_secondary_one);
+    padding: 3rem;
+    width: var(--width);
+    margin: 0;
+    position: relative;
+    z-index: 5;
+  }
+  */
+
+  /*
+  miles-overlap-block  .wp-block-group__inner-container ul li {
+    list-style: none;
+    padding: 0.5rem 0;
+  }
+
+
+  miles-overlap-block > .miles-overlap-block > .wp-block-group__inner-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 5;
+  }
+
+    */
+
+
+
+
+
